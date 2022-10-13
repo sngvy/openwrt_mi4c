@@ -1,0 +1,1 @@
+opkg update && opkg install luci && opkg install luci-i18n-base-ru && opkg install luci-i18n-firewall-ru && opkg install luci-i18n-opkg-ru && opkg list-upgradable | cut -f 1 -d ' ' | xargs -r opkg upgrade && iw dev wlan0 set bitrates ht-mcs-2.4 15 7 5
